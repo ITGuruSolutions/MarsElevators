@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Mars Elevators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="elevator-navbar">
+    <div class="elevator-navbar-left">
+      <button class="elevator-nav-hamburger" id="openMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="elevator-navbar-center">
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+    </div>
+    <div class="elevator-navbar-right">
+      <input type="text" id="navbarSearchInput" placeholder="Type to search..." style="display:none;font-size:1.1rem;padding:0.4em 1em;border-radius:1em;border:1px solid #ccc;width:180px;outline:none;margin-right:8px;transition:all 0.3s;" />
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Slide-out Menu (hidden by default) -->
+  <aside class="elevator-menu" id="elevatorMenu">
+    <div class="elevator-menu-header">
+      <button class="elevator-menu-close" id="closeMenu" aria-label="Close menu">&times;</button>
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+    <ul class="elevator-menu-list">
+      <li><a class="elevator-menu-btn" href="../index.html" aria-label="Home">Home</a></li>
+      <li><a class="elevator-menu-btn" href="/about/about.html" aria-label="About">About</a></li>
+      <li><a class="elevator-menu-btn" href="/products/products.html" aria-label="Products">Products</a></li>
+      <li><a class="elevator-menu-btn elevator-menu-services" href="/services/services.html" aria-label="Services">Services</a></li>
+      <li><a class="elevator-menu-btn" href="/faq/faq.html" aria-label="FAQ">FAQ</a></li>
+      <li><a class="elevator-menu-btn" href="/contact/contact.html" aria-label="Contact">Contact</a></li>
+    </ul>
+    <div class="elevator-menu-elevator">
+      <img src="../assets/home Elevator.jpg" alt="Find your elevator">
+      <div class="elevator-menu-elevator-caption">FIND YOUR ELEVATOR</div>
+    </div>
+    <div class="elevator-menu-footer">
+      <span>EN <i class="fas fa-chevron-down"></i></span>
+      <span>FAQ</span>
+    </div>
+  </aside>
+  <div class="elevator-menu-backdrop" id="menuBackdrop"></div>
+   <!-- Vertical Dots -->
+   <div class="vertical-dots" id="dots"></div>
+  </div>
+
+
+
+  <!-- Hero Section with Slider -->
+  <div class="slider-container" id="servicesSlider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content motion-frame" data-motion-delay="0.1s">
+        <h1>ELEVATOR SERVICES</h1>
+        <h2>Comprehensive Solutions</h2>
+        <button class="btn motion-zoom" data-motion-delay="0.3s">EXPLORE SERVICES</button>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator2.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>INSTALLATION & MAINTENANCE</h1>
+        <p>Professional installation and comprehensive maintenance services for all elevator types.</p>
+        <button class="btn">LEARN MORE</button>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator1.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>MODERNIZATION & UPGRADES</h1>
+        <p>Advanced modernization solutions to enhance performance and efficiency.</p>
+        <button class="btn">DISCOVER MORE</button>
+      </div>
+    </div>
+    <!-- Vertical Dots -->
+    <div class="#" id="#"></div>
+  </div>
+
+  <!-- Services Content Section -->
+  <section class="services-content-section">
+    <div class="services-content-container">
+      <div class="services-header">
+        <h2 class="services-main-title">ELEVATOR SERVICES</h2>
+        <p class="services-intro">Comprehensive elevator solutions tailored to meet your specific needs and requirements.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1: Installation -->
+        <div class="service-card motion-frame" data-motion-delay="0.1s">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Elevator Installation</h3>
+          <p>Professional installation services for various types of elevators, including passenger elevators, freight elevators, home elevators, and specialized elevators. We ensure proper installation, compliance with safety regulations, and efficient operation.</p>
+        </div>
+
+        <!-- Service 2: Modernization -->
+        <div class="service-card motion-frame" data-motion-delay="0.2s">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Elevator Modernization</h3>
+          <p>Upgrading existing elevator systems to improve performance, energy efficiency, safety, and aesthetics. Services include control system upgrades, cabin refurbishments, door replacements, and technology advancements.</p>
+        </div>
+
+        <!-- Service 3: Maintenance -->
+        <div class="service-card motion-frame" data-motion-delay="0.3s">
+          <div class="service-icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3>Elevator Maintenance</h3>
+          <p>Comprehensive maintenance programs including routine inspections, lubrication, adjustments, and preventive maintenance tasks. These services help identify and address potential issues before they become major problems.</p>
+        </div>
+
+        <!-- Service 4: Repair -->
+        <div class="service-card motion-frame" data-motion-delay="0.4s">
+          <div class="service-icon">
+            <i class="fas fa-screwdriver"></i>
+          </div>
+          <h3>Elevator Repair</h3>
+          <p>Prompt repair services to address any mechanical, electrical, or operational issues with elevators. Skilled technicians diagnose and troubleshoot problems, replace faulty components, and ensure optimal working condition.</p>
+        </div>
+
+        <!-- Service 5: Modernization Assessments -->
+        <div class="service-card motion-frame" data-motion-delay="0.5s">
+          <div class="service-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>Modernization Assessments</h3>
+          <p>Comprehensive evaluations of existing elevators to provide recommendations for upgrades or enhancements that can improve safety, efficiency, and aesthetics, tailored to your specific needs and budget.</p>
+        </div>
+
+        <!-- Service 6: Emergency Call-Outs -->
+        <div class="service-card motion-frame" data-motion-delay="0.6s">
+          <div class="service-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Emergency Call-Outs</h3>
+          <p>24/7 emergency call-out services for elevator breakdowns or emergencies. Our dedicated teams respond promptly to restore elevator functionality and ensure the safety and convenience of building occupants.</p>
+        </div>
+
+        <!-- Service 7: Consulting and Design -->   
+        <div class="service-card motion-frame" data-motion-delay="0.7s">
+          <div class="service-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <h3>Consulting and Design</h3>
+          <p>Expert guidance for architects, engineers, and building owners in integrating elevators into new construction projects. We provide elevator selection, placement, traffic analysis, and compliance with building codes.</p>
+        </div>
+
+        <!-- Service 8: Accessibility Upgrades -->
+        <div class="service-card motion-frame" data-motion-delay="0.8s">
+          <div class="service-icon">
+            <i class="fas fa-wheelchair"></i>
+          </div>
+          <h3>Accessibility Upgrades</h3>
+          <p>Specialized services to make elevators more accessible for individuals with disabilities or mobility challenges. We install braille buttons, audible announcements, handrails, and spacious cabins, ensuring compliance with accessibility standards.</p>
+        </div>
+
+        <!-- Service 9: Safety Inspections -->
+        <div class="service-card motion-frame" data-motion-delay="0.9s">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Safety Inspections and Audits</h3>
+          <p>Comprehensive safety inspections and audits to assess elevator compliance with safety standards and regulations. We identify potential hazards, evaluate safety features, and provide recommendations for improvements.</p>
+        </div>
+
+        <!-- Service 10: Energy Efficiency -->
+        <div class="service-card motion-frame" data-motion-delay="1.0s">
+          <div class="service-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Energy Efficiency Enhancements</h3>
+          <p>Energy-efficient solutions to reduce consumption and environmental impact. We offer energy-efficient elevator systems, regenerative drives, LED lighting, and standby mode features, helping you save energy and lower operating costs.</p>
+        </div>
+
+        <!-- Service 11: Training -->
+        <div class="service-card motion-frame" data-motion-delay="1.1s">
+          <div class="service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Training and Education</h3>
+          <p>Comprehensive training programs for building owners, facility managers, and elevator users. We educate individuals on elevator usage, safety procedures, emergency protocols, and basic troubleshooting.</p>
+        </div>
+
+        <!-- Service 12: Retrofitting -->
+        <div class="service-card motion-frame" data-motion-delay="1.2s">
+          <div class="service-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>Retrofitting and Upgrades</h3>
+          <p>Retrofitting services to upgrade outdated or non-compliant elevator systems. We replace outdated components, install new safety features, and ensure elevators meet the latest industry standards and regulations.</p>
+        </div>
+      </div>
+
+      <div class="services-cta">
+        <h3>Ready to Get Started?</h3>
+        <button class="btn services-cta-btn">GET A QUOTE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="text-center text-lg-start text-white" style="border:none;box-shadow:none;background:none;">
+  <div class="container p-4 pb-0" style="border:none;box-shadow:none;background:none;">
+    <!-- First Row -->
+    <div class="row">
+      
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot">About Mars Elevator</h5>
+        <p class="mt-4">
+          Mars Elevators is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.
+          With a commitment to quality, safety, and customer satisfaction, Mars Elevators delivers state-of-the-art products and services tailored to meet the unique needs of every client.
+        </p>
+      </div>
+
+      <!-- Elevator Types Section -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot text-center">Elevator Types</h5>
+        <div class="elevator-types-grid">
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-user"></i></a>
+            <p>Passenger Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-tint"></i></a>
+            <p>Hydraulic Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-box"></i></a>
+            <p>Goods Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-circle-notch"></i></a>
+            <p>Capsule Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-hospital"></i></a>
+            <p>Hospital Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-car"></i></a>
+            <p>Automobile Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-wheelchair"></i></a>
+            <p>Chair Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-utensils"></i></a>
+            <p>Dumbwaiter Elevator</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact + Feedback -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot">Contact Details</h5>
+        <div class="custom-google-map-container mt-3 mb-4">
+          <iframe
+            src="https://maps.google.com/maps?q=28.3974402,77.0647041&z=15&output=embed"
+            width="100%"
+            height="180"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form mt-4">
+          <form>
+            <div class="mb-3">
+              <label for="feedback" class="form-label">Your Feedback</label>
+              <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Social Links -->
+    <div class="row">
+      <div class="col text-center">
+        <h5 class="text-uppercase h5-fot">Connect with Us</h5>
+        <div class="footer-social-icons">
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/">
+            <i class="fab fa-instagram" style="color:#E1306C;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649">
+            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com">
+            <i class="far fa-envelope" style="color:#FF0000;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649">
+            <i class="fas fa-phone" style="color:#57e238;"></i>
+          </a>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center p-3 footer-text">
+    © 2004 Mars Elevator. All rights reserved.
+  </div>
+</footer>
+
+
+  <script src="/Script/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Mars Elevators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="elevator-navbar">
+    <div class="elevator-navbar-left">
+      <button class="elevator-nav-hamburger" id="openMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="elevator-navbar-center">
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+    </div>
+    <div class="elevator-navbar-right">
+      <input type="text" id="navbarSearchInput" placeholder="Type to search..." style="display:none;font-size:1.1rem;padding:0.4em 1em;border-radius:1em;border:1px solid #ccc;width:180px;outline:none;margin-right:8px;transition:all 0.3s;" />
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Slide-out Menu (hidden by default) -->
+  <aside class="elevator-menu" id="elevatorMenu">
+    <div class="elevator-menu-header">
+      <button class="elevator-menu-close" id="closeMenu" aria-label="Close menu">&times;</button>
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+    <ul class="elevator-menu-list">
+      <li><a class="elevator-menu-btn elevator-menu-home" href="../index.html" aria-label="Home">Home</a></li>
+      <li><a class="elevator-menu-btn" href="/about/about.html" aria-label="About">About</a></li>
+      <li><a class="elevator-menu-btn" href="/products/products.html" aria-label="Products">Products</a></li>
+      <li><a class="elevator-menu-btn" href="/services/services.html" aria-label="Services">Services</a></li>
+      <li><a class="elevator-menu-btn" href="/faq/faq.html" aria-label="FAQ">FAQ</a></li>
+      <li><a class="elevator-menu-btn" href="/contact/contact.html" aria-label="Contact">Contact</a></li>
+    </ul>
+    <div class="elevator-menu-elevator">
+      <img src="../assets/home Elevator.jpg" alt="Find your elevator">
+      <div class="elevator-menu-elevator-caption">FIND YOUR ELEVATOR</div>
+    </div>
+    <div class="elevator-menu-footer">
+      <span>EN <i class="fas fa-chevron-down"></i></span>
+      <span>FAQ</span>
+    </div>
+  </aside>
+  <div class="elevator-menu-backdrop" id="menuBackdrop"></div>
+  <div class="" id="dots"></div>
+  </div>
+
+
+  <!-- Hero Section with Slider -->
+  <div class="slider-container" id="aboutSlider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content motion-frame" data-motion-delay="0.1s">
+        <h1>ALL ABOUT MARS ELEVATOR</h1>
+        <h2>21 Years of Excellence</h2>
+        <button class="btn motion-zoom" data-motion-delay="0.3s">LEARN MORE</button>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator2.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>QUALITY & INNOVATION</h1>
+        <p>Specializing in elevators tailored to your specific needs and requirements.</p>
+        <button class="btn">EXPLORE SERVICES</button>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator1.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>SAFETY & PERFORMANCE</h1>
+        <p>Meeting the highest safety and performance standards for over two decades.</p>
+        <button class="btn">DISCOVER MORE</button>
+      </div>
+    </div>
+    <!-- Vertical Dots -->
+    <div class="vertical-dots" id="aboutDots"></div>
+  </div>
+
+  <!-- About Content Section with Grid Layout -->
+  <section class="about-content-section">
+    <div class="about-content-container">
+      <div class="about-content-grid">
+        <!-- Left Side - Image -->
+        <div class="about-content-image motion-frame" data-motion-delay="0.1s">
+          <img src="../assets/luxury elevator.jpg" alt="Mars Elevator Luxury">
+        </div>
+        
+        <!-- Right Side - Content -->
+        <div class="about-content-text motion-frame" data-motion-delay="0.2s">
+          <h2 class="motion-fade" data-motion-delay="0.2s">MARS ELEVATOR</h2>
+          <p class="about-intro">
+            MARS Elevator is an 21-year-old elevator manufacturer and supplier based in GURGOAN, HARYANA. We specialize in elevators that are tailored to your specific needs and requirements. Our goal is to provide our customers with the highest quality product that elevates their lifestyle and adds value to their property.
+          </p>
+          <p class="about-details">
+            We offer a wide range of options that are designed to meet your individual requirements and preferences. Our team of experienced technicians will help you find the perfect elevator to complement your lifestyle, home, and budget. Visit our website today to learn more about our products and services.
+          </p>
+          <p class="about-expertise">
+            At Mars Elevator, we specialize in the design, engineering and installation of elevators that are designed to meet the highest safety and performance standards. Our team of dedicated professionals brings two decades of experience in the industry, and we strive to provide the best possible service and solutions to our customers.
+          </p>
+          <p class="about-quality">
+            Our elevators are reliable, affordable and built to last, and are perfect for residential, commercial and industrial applications. We are committed to providing our customers with the highest quality products, and our elevators are designed to be both efficient and comfortable for all users.
+          </p>
+          <button class="btn about-cta">GET IN TOUCH</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="text-center text-lg-start text-white" style="border:none;box-shadow:none;background:none;">
+  <div class="container p-4 pb-0" style="border:none;box-shadow:none;background:none;">
+    <!-- First Row -->
+    <div class="row">
+      
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot">About Mars Elevator</h5>
+        <p class="mt-4">
+          Mars Elevators is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.
+          With a commitment to quality, safety, and customer satisfaction, Mars Elevators delivers state-of-the-art products and services tailored to meet the unique needs of every client.
+        </p>
+      </div>
+
+      <!-- Elevator Types Section -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot text-center">Elevator Types</h5>
+        <div class="elevator-types-grid">
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-user"></i></a>
+            <p>Passenger Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-tint"></i></a>
+            <p>Hydraulic Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-box"></i></a>
+            <p>Goods Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-circle-notch"></i></a>
+            <p>Capsule Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-hospital"></i></a>
+            <p>Hospital Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-car"></i></a>
+            <p>Automobile Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-wheelchair"></i></a>
+            <p>Chair Elevator</p>
+          </div>
+          <div class="elevator-type-item">
+            <a class="btn btn-floating m-1" href="#"><i class="fas fa-utensils"></i></a>
+            <p>Dumbwaiter Elevator</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact + Feedback -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase h5-fot">Contact Details</h5>
+        <div class="custom-google-map-container mt-3 mb-4">
+          <iframe
+            src="https://maps.google.com/maps?q=28.3974402,77.0647041&z=15&output=embed"
+            width="100%"
+            height="180"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form mt-4">
+          <form>
+            <div class="mb-3">
+              <label for="feedback" class="form-label">Your Feedback</label>
+              <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Social Links -->
+    <div class="row">
+      <div class="col text-center">
+        <h5 class="text-uppercase h5-fot">Connect with Us</h5>
+        <div class="footer-social-icons">
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/">
+            <i class="fab fa-instagram" style="color:#E1306C;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649">
+            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com">
+            <i class="far fa-envelope" style="color:#FF0000;"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649">
+            <i class="fas fa-phone" style="color:#57e238;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center p-3 footer-text">
+    © 2004 Mars Elevator. All rights reserved.
+  </div>
+</footer>
+
+
+  <script src="/Script/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mars Elevators</title>
+  <link rel="stylesheet" href="/Style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="elevator-navbar">
+    <div class="elevator-navbar-left">
+      <button class="elevator-nav-hamburger" id="openMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="elevator-navbar-center">
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+    </div>
+    <div class="elevator-navbar-right">
+      <input type="text" id="navbarSearchInput" placeholder="Type to search..." style="display:none;font-size:1.1rem;padding:0.4em 1em;border-radius:1em;border:1px solid #ccc;width:180px;outline:none;margin-right:8px;transition:all 0.3s;" />
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+  
+  <!-- Slide-out Menu -->
+  <aside class="elevator-menu" id="elevatorMenu">
+    <div class="elevator-menu-header">
+      <button class="elevator-menu-close" id="closeMenu" aria-label="Close menu">&times;</button>
+      <img src="../assets/logo.png" alt="Logo" class="elevator-logo">
+      <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+    <ul class="elevator-menu-list">
+      <li><a class="elevator-menu-btn elevator-menu-home" href="../index.html" aria-label="Home">Home</a></li>
+      <li><a class="elevator-menu-btn" href="/about/about.html" aria-label="About">About</a></li>
+      <li><a class="elevator-menu-btn" href="/products/products.html" aria-label="Products">Products</a></li>
+      <li><a class="elevator-menu-btn" href="/services/services.html" aria-label="Services">Services</a></li>
+      <li><a class="elevator-menu-btn" href="/faq/faq.html" aria-label="FAQ">FAQ</a></li>
+      <li><a class="elevator-menu-btn" href="/contact/contact.html" aria-label="Contact">Contact</a></li>
+    </ul>
+    <div class="elevator-menu-elevator">
+      <img src="../assets/home Elevator.jpg" alt="Find your elevator">
+      <div class="elevator-menu-elevator-caption">FIND YOUR ELEVATOR</div>
+    </div>
+    <div class="elevator-menu-footer">
+      <span>EN <i class="fas fa-chevron-down"></i></span>
+      <span>FAQ</span>
+    </div>
+  </aside>
+  <div class="elevator-menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- Contact Hero Section -->
+  <div class="slider-container" id="contactSlider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content motion-frame" data-motion-delay="0.1s">
+        <h1>Contact Mars Elevators</h1>
+        <h2>We're here to elevate your experience</h2>
+        <a href="#contactForm" class="btn motion-zoom" data-motion-delay="0.3s">SEND US AN ENQUIRY</a>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator2.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>GET IN TOUCH</h1>
+        <p>Reach out for expert consultation and premium elevator solutions.</p>
+        <!-- Removed CONTACT US button -->
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <video class="video-bg" autoplay loop muted playsinline>
+        <source src="../assets/Elevator1.mp4" type="video/mp4">
+      </video>
+      <div class="slide-content">
+        <h1>SUPPORT & SERVICE</h1>
+        <p>Our team is ready to assist you with your elevator needs.</p>
+        <a href="#contactForm" class="btn">REQUEST SUPPORT</a>
+      </div>
+    </div>
+    <!-- Vertical Dots -->
+    <div class="vertical-dots" id="dots"></div>
+  </div>
+
+  <!-- Contact Main Content -->
+  <main class="contact-content-section">
+    <div class="contact-content-container">
+      
+      <!-- Contact Grid -->
+      <div class="contact-section-grid">
+        
+        <!-- Contact Form -->
+        <div class="enquiry-form-container motion-zoom">
+          <h3><i class="fas fa-envelope"></i> Send us a Message</h3>
+          <form class="enquiry-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="residential">Residential Elevators</option>
+                <option value="commercial">Commercial Elevators</option>
+                <option value="maintenance">Maintenance & Service</option>
+                <option value="modernization">Modernization</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project requirements..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn enquiry-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-container motion-zoom">
+          <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>570/43 Basement Sector 43<br>Golf Course Road<br>Gurugram, Haryana 122022</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>Ph: +91 9958582649<br>Ph: +91 9716162649</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@marselevators.in<br>support@marselevators.in</p>
+            </div>
+          </div>
+          <div class="contact-quote">
+            <p>"Elevating your expectations, one floor at a time."</p>
+          </div>
+        
+          <!-- Social Media Links -->
+          <div class="contact-social-links">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" style="color:#E1306C;"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com" aria-label="Gmail">
+                <i class="far fa-envelope" style="color:#FF0000;"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649" aria-label="Phone">
+                <i class="fas fa-phone" style="color:#57e238;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="contact-map-section motion-zoom">
+        <h3><i class="fas fa-map"></i> Find Us</h3>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps?q=570/43+Basement,+Sector+43,+Golf+Course+Road,+Gurugram,+Haryana+122022&output=embed"
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Emergency Contact -->
+      <div class="emergency-contact motion-zoom">
+        <div class="emergency-card">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>24/7 Emergency Service</h3>
+          <p>For urgent elevator repairs and emergency situations</p>
+          <a href="tel:+15559876543" class="btn emergency-btn">
+            <i class="fas fa-phone"></i> Emergency: +919716162649
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="text-center text-lg-start text-white" style="border:none;box-shadow:none;background:none;">
+    <div class="container p-4 pb-0" style="border:none;box-shadow:none;background:none;">
+      <!-- First Row -->
+      <div class="row">
+        
+        <!-- About Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase h5-fot">About Mars Elevator</h5>
+          <p class="mt-4">
+            Mars Elevators is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.
+            With a commitment to quality, safety, and customer satisfaction, Mars Elevators delivers state-of-the-art products and services tailored to meet the unique needs of every client.
+          </p>
+        </div>
+
+        <!-- Elevator Types Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase h5-fot text-center">Elevator Types</h5>
+          <div class="elevator-types-grid">
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-user"></i></a>
+              <p>Passenger Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-tint"></i></a>
+              <p>Hydraulic Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-box"></i></a>
+              <p>Goods Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-circle-notch"></i></a>
+              <p>Capsule Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-hospital"></i></a>
+              <p>Hospital Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-car"></i></a>
+              <p>Automobile Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-wheelchair"></i></a>
+              <p>Chair Elevator</p>
+            </div>
+            <div class="elevator-type-item">
+              <a class="btn btn-floating m-1" href="#"><i class="fas fa-utensils"></i></a>
+              <p>Dumbwaiter Elevator</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact + Feedback -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase h5-fot">Contact Details</h5>
+          <div class="custom-google-map-container mt-3 mb-4">
+            <iframe
+              src="https://maps.google.com/maps?q=28.3974402,77.0647041&z=15&output=embed"
+              width="100%"
+              height="180"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Feedback Form -->
+          <div class="feedback-form mt-4">
+            <form>
+              <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback here"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+
+      <!-- Social Links -->
+      <div class="row">
+        <div class="col text-center">
+          <h5 class="text-uppercase h5-fot">Connect with Us</h5>
+          <div class="footer-social-icons">
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/">
+              <i class="fab fa-instagram" style="color:#E1306C;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649">
+              <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com">
+              <i class="far fa-envelope" style="color:#FF0000;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649">
+              <i class="fas fa-phone" style="color:#57e238;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center p-3 footer-text">
+      © 2004 Mars Elevator. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="/Script/script.js"></script>
+  <script>
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Simple validation
+      if (!data.name || !data.email || !data.message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Simulate form submission
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html> 
