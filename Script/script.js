@@ -89,6 +89,10 @@ if (closeMenu) closeMenu.onclick = closeMenuHandler;
 const menuButtons = document.querySelectorAll('.elevator-menu-btn');
 menuButtons.forEach((btn) => {
   btn.onclick = () => {
+    // Remove .active from all buttons
+    menuButtons.forEach(b => b.classList.remove('active'));
+    // Add .active to the clicked button
+    btn.classList.add('active');
     menu.classList.remove('open');
     backdrop.classList.remove('show');
     // TODO: Add navigation logic here if needed
@@ -98,6 +102,7 @@ menuButtons.forEach((btn) => {
 // Navbar hide/show on scroll (enhanced)
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector('.elevator-navbar');
+
 let navbarVisible = true;
 
 function showNavbar() {
@@ -649,4 +654,52 @@ if (navbarSearchBtn && navbarSearchInput) {
 
   // Show first slide on load
   showSlide(0);
+})(); 
+
+
+
+
+
+
+// =====================
+// THEME TOGGLE LOGIC
+// =====================
+(function() {
+  // Create the toggle button
+  const themeToggleBtn = document.createElement('button');
+  themeToggleBtn.id = 'themeToggleBtn';
+  themeToggleBtn.innerText = '🌓 Black & White';
+  themeToggleBtn.style.cssText = 'margin-left:16px;padding:0.5em 1em;border-radius:1em;border:none;background:var(--color-main,#000);color:var(--color-white,#fff);font-size:1rem;cursor:pointer;transition:background 0.2s;';
+
+  // Find a place in the navbar to insert the button
+  const navbarRight = document.querySelector('.elevator-navbar-right');
+  if (navbarRight) {
+    navbarRight.appendChild(themeToggleBtn);
+  } else {
+    // Fallback: add to body if navbar not found
+    document.body.appendChild(themeToggleBtn);
+  }
+
+  // Theme switching logic
+  function setThemeBW(enabled) {
+    if (enabled) {
+      document.body.classList.add('theme-bw');
+      localStorage.setItem('theme-bw', '1');
+      themeToggleBtn.innerText = '🌗 Default Theme';
+    } else {
+      document.body.classList.remove('theme-bw');
+      localStorage.setItem('theme-bw', '0');
+      themeToggleBtn.innerText = '🌓 Black & White';
+    }
+  }
+
+  // On click, toggle theme
+  themeToggleBtn.onclick = function() {
+    setThemeBW(!document.body.classList.contains('theme-bw'));
+  };
+
+  // On page load, set theme from localStorage
+  if (localStorage.getItem('theme-bw') === '1') {
+    setThemeBW(true);
+  }
 })(); 
