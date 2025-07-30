@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mars Elevators</title>
+  <title>Commercial Elevators & Passenger Lifts – Mars Elevator India</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Explore safe, smart, and affordable elevators for homes, offices & commercial buildings. Contact Mars Elevator today!">
+  <meta name="keywords" content="commercial elevators, passenger lifts, dumbwaiter elevator, elevator manufacturers India, Mars Elevator, industrial elevators, residential elevators">
+  <meta name="author" content="Mars Elevator India">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Commercial Elevators & Passenger Lifts – Mars Elevator India">
+  <meta property="og:description" content="Explore safe, smart, and affordable elevators for homes, offices & commercial buildings. Contact Mars Elevator today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marselevators.in">
+  <meta property="og:image" content="assets/logo.png">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commercial Elevators & Passenger Lifts – Mars Elevator India">
+  <meta name="twitter:description" content="Explore safe, smart, and affordable elevators for homes, offices & commercial buildings. Contact Mars Elevator today!">
+  <meta name="twitter:image" content="assets/logo.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://marselevators.in">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  
+
+  
+  <style>
+    /* Theme 1: Modern Professional (DM Sans + Montserrat) */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    /* Theme 2: Classic Elegant (Inter + Poppins) */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    /* Theme 3: Contemporary Clean (Roboto + Open Sans) */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
+    /* Theme 4: Premium Luxury (Playfair Display + Lato) */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  </style>
   <link rel="stylesheet" href="/Style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -20,7 +58,7 @@
       <img src="assets/logo.png" alt="Logo" class="elevator-logo">
     </div>
     <div class="elevator-navbar-right">
-      <input type="text" id="navbarSearchInput" placeholder="Type to search..." style="display:none;font-size:1.1rem;padding:0.4em 1em;border-radius:1em;border:1px solid #ccc;width:180px;outline:none;margin-right:8px;transition:all 0.3s;" />
+      <input type="text" id="navbarSearchInput" placeholder="Type to search..." class="navbar-search-input" style="display:none;" />
       <button class="elevator-nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
     </div>
   </nav>
@@ -58,10 +96,10 @@
       <video class="video-bg" autoplay loop muted playsinline>
         <source src="assets/Elevator.mp4" type="video/mp4">
       </video>
-      <div class="slide-content motion-frame" data-motion-delay="0.1s">
-        <h1>Mars Elevators</h1>
-        <h2>Elevating Excellence</h2>
-        <button class="btn motion-zoom" data-motion-delay="0.3s">DISCOVER OUR SOLUTIONS</button>
+      <div class="slide-content">
+        <h1>Mars Elevator</h1>
+        <p>Explore safe, smart, and affordable elevators for homes, offices & commercial</p>
+        <button class="btn">EXPLORE COLLECTION</button>
       </div>
     </div>
     <!-- Slide 2 -->
@@ -69,10 +107,11 @@
       <video class="video-bg" autoplay loop muted playsinline>
         <source src="assets/Elevator2.mp4" type="video/mp4">
       </video>
-      <div class="slide-content">
-        <h1>THE ART OF TIME</h1>
-        <p>Experience the pinnacle of Swiss watchmaking with our Grand Complications collection.</p>
-        <button class="btn">EXPLORE COLLECTION</button>
+     
+      <div class="slide-content motion-frame" data-motion-delay="0.1s">
+        <h1>Best Elevators for Commercial & Industrial Use in India</h1>
+        <h2>Elevating Excellence</h2>
+        <button class="btn motion-zoom" data-motion-delay="0.3s">DISCOVER OUR SOLUTIONS</button>
       </div>
     </div>
     <!-- Slide 3 -->
@@ -89,7 +128,6 @@
     <!-- Vertical Dots -->
     <div class="vertical-dots" id="dots"></div>
   </div>
-
 
 
 
@@ -148,65 +186,61 @@
   <!-- End Models Slider Section -->
 
    <!-- Products/Services Section -->
-   <section class="products-section motion-frame" data-motion-delay="0.1s">
-    <h2 class="motion-fade" data-motion-delay="0.2s">Our Products & Services</h2>
+   <section class="products-section">
+    <h2>Our Products & Services</h2>
     <div class="products-grid">
-      <div class="product-card motion-zoom" data-motion-delay="0.1s">
-        <img src="assets/home Elevator.jpg" alt="Passenger Elevators" class="motion-frame" data-motion-delay="0.2s">
-        <h4>Passenger Elevators</h4>
-        <p>Designed for comfort, safety, and efficiency in residential and commercial spaces.</p>
+      <div class="product-card">
+        <img src="assets/_Home Elevator.png" alt="Commercial Passenger Elevators India">
+        <h4>Commercial Passenger Lifts</h4>
+        <p>High-quality passenger lifts designed for commercial buildings, offices, and shopping centers across India. Safe, efficient, and compliant with Indian safety standards.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.2s">
-        <img src="assets/goods Elevator.jpg" alt="Goods Elevators" class="motion-frame" data-motion-delay="0.3s">
+      <div class="product-card">
+        <img src="assets/Goods Elevators.png"alt="Goods Elevators">
         <h4>Goods Elevators</h4>
         <p>Robust and reliable solutions for transporting goods in warehouses, factories, and commercial buildings.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.3s">
-        <img src="assets/home Elevator.jpg" alt="Home Elevators" class="motion-frame" data-motion-delay="0.4s">
+      <div class="product-card">
+        <img src="assets/Home Elevators.jpg" alt="Home Elevators">
         <h4>Home Elevators</h4>
         <p>Elegant and space-saving lifts for private residences, ensuring accessibility and convenience.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.4s">
-        <img src="assets/luxury elevator.jpg" alt="Hospital Elevators" class="motion-frame" data-motion-delay="0.5s">
+      <div class="product-card">
+        <img src="assets/Hospital Elevators.png" alt="Hospital Elevators">
         <h4>Hospital Elevators</h4>
         <p>Specially designed for hospitals and healthcare facilities, focusing on hygiene, safety, and smooth operation.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.5s">
-        <img src="assets/luxury elevator.jpg" alt="Capsule Elevators" class="motion-frame" data-motion-delay="0.6s">
+      <div class="product-card">
+        <img src="assets/model-prototype.jpg" alt="Capsule Elevators">
         <h4>Capsule Elevators</h4>
         <p>Aesthetic and panoramic lifts for modern buildings, combining style with functionality.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.6s">
-        <img src="assets/goods Elevator.jpg" alt="Dumbwaiters" class="motion-frame" data-motion-delay="0.7s">
-        <h4>Dumbwaiters</h4>
-        <p>Compact lifts for transporting small goods in hotels, restaurants, and homes.</p>
+      <div class="product-card">
+        <img src="assets/Dumbwaiters.png" alt="Dumbwaiter Elevators for Hotels and Homes">
+        <h4>Dumbwaiter Elevators</h4>
+        <p>Specialized dumbwaiter elevator solutions for hotels, restaurants, and residential buildings. Compact, efficient, and perfect for transporting goods and food items.</p>
       </div>
-      <div class="product-card motion-zoom" data-motion-delay="0.7s">
-        <img src="assets/luxury elevator.jpg" alt="Escalators & Moving Walks" class="motion-frame" data-motion-delay="0.8s">
-        <h4>Escalators & Moving Walks</h4>
-        <p>Efficient people-moving solutions for malls, airports, and transit hubs.</p>
+      <div class="product-card">
+        <img src="assets/Automobile Elevator.png" alt="Escalators & Moving Walks">
+        <h4>Automobile Elevator</h4>
+        <p> Automobile elevators are often used by developers and architects to create flexible and luxurious parking facilitie</p>
       </div>
     </div>
   </section>
-
- 
-
 
   <!-- About Us & Mission Section -->
   <section class="about-section">
-    <div class="about-image motion-frame" data-motion-delay="0.1s">
-      <img src="assets/22 years of.jpg" alt="Story Board">
+    <div class="about-image">
+      <img src="assets/Automobile Elevator.png" alt="Automobile Elevator">
     </div>
-    <div class="about-container motion-frame" data-motion-delay="0.2s">
-        <h2 class="motion-fade" data-motion-delay="0.2s">About Us</h2>
-        <p>Mars Elevators is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.<br>
-          With a commitment to quality, safety, and customer satisfaction, Mars Elevators delivers state-of-the-art products and services tailored to meet the unique needs of every client.</p>
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>Mars Elevator is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.<br>
+          With a commitment to quality, safety, and customer satisfaction, Mars Elevator delivers state-of-the-art products and services tailored to meet the unique needs of every client.</p>
       </div>
-    
   </section>
 
   <!-- Projects/Luxury Section with BG Image and Cards -->
-  <section class="project-cards-section" style="background-image: url('assets/');">
+  <!-- <section class="project-cards-section" style="background-image: url('assets/');">
     <div class="project-cards-container">
       <div class="project-card-block">
         <div class="project-card-number">1</div>
@@ -222,12 +256,12 @@
         <button class="project-card-btn">CALL US</button>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Why Choose Us Section -->
-  <section class="why-choose-section motion-frame" data-motion-delay="0.1s">
+  <section class="why-choose-section">
     <div class="why-choose-content">
-      <h2 class="motion-fade" data-motion-delay="0.2s">Why Choose Mars Elevators?</h2>
+      <h2>Why Choose Mars Elevator?</h2>
       <ul>
         <li>Advanced technology and innovation</li>
         <li>Strict adherence to safety standards</li>
@@ -241,96 +275,130 @@
     </div>
   </section>
 
-  <!-- Contact/CTA Section -->
-  <section class="contact-section-grid motion-frame" data-motion-delay="0.1s">
-    <div class="enquiry-form-container">
-      <h3><i class="fas fa-envelope"></i> Enquiry Form</h3>
-      <form class="enquiry-form" id="homeContactForm">
-        <div class="form-group">
-          <label for="enquiry-name">Full Name *</label>
-          <input type="text" id="enquiry-name" name="name" required>
+
+
+  
+  <!-- Blog/Articles Section -->
+  <section class="blog-section">
+    <h2>Latest Insights & Articles</h2>
+    <div class="blog-grid">
+      <!-- <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/luxury elevator.jpg" alt="TKE Elevator Popularity">
         </div>
-        <div class="form-group">
-          <label for="enquiry-email">Email Address *</label>
-          <input type="email" id="enquiry-email" name="email" required>
+        <div class="blog-content">
+          <h3>Why TKE Elevator Is Popular in 2025?</h3>
+          <p>Discover the cutting-edge technology and innovative features that make TKE elevators the preferred choice for modern buildings in 2025.</p>
+          <a href="#" class="blog-read-more">Read More <span class="arrow">&rarr;</span></a>
         </div>
-        <div class="form-group">
-          <label for="enquiry-phone">Phone Number</label>
-          <input type="tel" id="enquiry-phone" name="phone">
+      </article> -->
+      
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/goods Elevator.jpg" alt="Commercial Elevators India">
         </div>
-        <div class="form-group">
-          <label for="enquiry-service">Service Required</label>
-          <select id="enquiry-service" name="service">
-            <option value="">Select a service</option>
-            <option value="residential">Residential Elevators</option>
-            <option value="commercial">Commercial Elevators</option>
-            <option value="maintenance">Maintenance & Service</option>
-            <option value="modernization">Modernization</option>
-            <option value="consultation">Consultation</option>
-            <option value="other">Other</option>
-          </select>
+        <div class="blog-content">
+          <h3>Commercial Elevators for Buildings in India</h3>
+          <p>Comprehensive guide to choosing the right commercial elevator solutions for Indian buildings, covering safety standards and regulations.</p>
+          <a href="#" class="blog-read-more">Read More <span class="arrow">&rarr;</span></a>
         </div>
-        <div class="form-group">
-          <label for="enquiry-message">Message *</label>
-          <textarea id="enquiry-message" name="message" rows="4" required placeholder="Tell us about your project requirements..."></textarea>
+      </article>
+      
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/home Elevator.jpg" alt="Dumbwaiter Elevators">
         </div>
-        <button type="submit" class="btn enquiry-submit">
-          <i class="fas fa-paper-plane"></i> Submit Enquiry
-        </button>
-      </form>
+        <div class="blog-content">
+          <h3>Top Features of Dumbwaiter Elevators for Homes & Hotels</h3>
+          <p>Explore the essential features and benefits of dumbwaiter elevators that make them perfect for residential and hospitality applications.</p>
+          <a href="#" class="blog-read-more">Read More <span class="arrow">&rarr;</span></a>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/luxury elevator.jpg" alt="Passenger Lifts vs Residential">
+        </div>
+        <div class="blog-content">
+          <h3>Difference Between Passenger Lifts and Residential Elevators</h3>
+          <p>Understanding the key differences between passenger lifts and residential elevators to help you make the right choice for your project.</p>
+          <a href="#" class="blog-read-more">Read More <span class="arrow">&rarr;</span></a>
+        </div>
+      </article>
     </div>
-    <div class="contact-info-container">
-      <p>For inquiries, quotes, or service requests, reach out to our team and experience the Mars Elevators difference.</p>
-      
-      <!-- Contact Info Items -->
-      <div class="contact-info-items">
-        <div class="contact-info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h4>Address</h4>
-            <p>570/43 Basement Sector 43<br>Golf Course Road<br>Gurugram, Haryana 122022</p>
+  </section>
+
+
+  <!-- Contact/CTA Section -->
+  <section class="enquiry-card-section">
+    <div class="enquiry-card">
+      <div class="enquiry-card-left">
+        <img src="assets/logo.png" alt="Mars Elevator Logo" class="enquiry-logo" />
+        <div class="enquiry-card-image">
+          <img src="assets/22 years of.jpg" alt="Elevator" />
+        </div>
+        <div class="enquiry-card-social">
+          <h4>Connect With Us</h4>
+          <div class="social-icons">
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram" style="color:#E1306C;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com" aria-label="Gmail">
+              <i class="far fa-envelope" style="color:#FF0000;"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649" aria-label="Phone">
+              <i class="fas fa-phone" style="color:#57e238;"></i>
+            </a>
           </div>
         </div>
-        
-        <div class="contact-info-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <h4>Phone</h4>
-            <p>Ph: 9958582649<br>Ph: 9716162649</p>
-          </div>
-        </div>
-        
-        <div class="contact-info-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h4>Email</h4>
-            <p>info@marselevators.in<br>support@marselevators.in</p>
-          </div>
-        </div>
-        
-        
       </div>
-      
-      <a href="/contact/contact.html" class="btn motion-zoom" data-motion-delay="0.3s" style="text-decoration: none;">
-        <i class="fas fa-phone"></i> Get in Touch
-      </a>
-      
-      <div class="contact-social-links" style="margin-top:2rem;">
-        <h4>Follow Us</h4>
-        <div class="social-icons">
-          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://www.instagram.com/marselevator/" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram" style="color:#E1306C;"></i>
-          </a>
-          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="mailto:marselevator@gmail.com" aria-label="Gmail">
-            <i class="far fa-envelope" style="color:#FF0000;"></i>
-          </a>
-          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="https://wa.me/+919958582649" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
-          </a>
-          <a class="btn btn-outline-light btn-floating m-1 no-underline" href="tel:+919958582649" aria-label="Phone">
-            <i class="fas fa-phone" style="color:#57e238;"></i>
-          </a>
-        </div>
+      <div class="enquiry-card-right">
+        <form class="enquiry-modern-form" id="homeContactForm">
+          <div class="enquiry-form-row">
+            <div class="enquiry-form-group full-width">
+              <label for="enquiry-name">Name</label>
+              <input type="text" id="enquiry-name" name="name" placeholder="Your name" required />
+            </div>
+          </div>
+          <div class="enquiry-form-row">
+            <div class="enquiry-form-group full-width">
+              <label for="enquiry-email">Email</label>
+              <input type="email" id="enquiry-email" name="email" placeholder="Your email" required />
+            </div>
+          </div>
+          <div class="enquiry-form-row">
+            <div class="enquiry-form-group full-width">
+              <label for="enquiry-phone">Phone</label>
+              <input type="tel" id="enquiry-phone" name="phone" placeholder="Your phone number" />
+            </div>
+          </div>
+          <div class="enquiry-form-row">
+            <div class="enquiry-form-group full-width">
+              <label for="enquiry-service">Service Required</label>
+              <select id="enquiry-service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="residential">Residential Elevators</option>
+                <option value="commercial">Commercial Elevators</option>
+                <option value="maintenance">Maintenance & Service</option>
+                <option value="modernization">Modernization</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="enquiry-form-row">
+            <div class="enquiry-form-group full-width">
+              <label for="enquiry-message">Message</label>
+              <textarea id="enquiry-message" name="message" rows="3" placeholder="Tell us about your project requirements..." required></textarea>
+            </div>
+          </div>
+          <div class="enquiry-form-actions">
+            <button type="submit" class="enquiry-btn-primary">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -350,8 +418,8 @@
       <div class="col-md-4 mb-4">
         <h5 class="text-uppercase h5-fot">About Mars Elevator</h5>
         <p class="mt-4">
-          Mars Elevators is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.
-          With a commitment to quality, safety, and customer satisfaction, Mars Elevators delivers state-of-the-art products and services tailored to meet the unique needs of every client.
+          Mars Elevator is a leading manufacturer and supplier of elevators and escalators, offering innovative and reliable vertical transportation solutions for residential, commercial, and industrial buildings.
+          With a commitment to quality, safety, and customer satisfaction, Mars Elevator delivers state-of-the-art products and services tailored to meet the unique needs of every client.
         </p>
       </div>
 
@@ -508,5 +576,67 @@
       }, 2000);
     });
   </script>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Mars Elevator India",
+        "url": "https://marselevator.in",
+        "logo": "https://marselevator.in/assets/logo.png",
+        "description": "Leading manufacturer and supplier of elevators and escalators for residential, commercial, and industrial buildings in India.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "570/43 Basement Sector 43",
+          "addressLocality": "Gurugram",
+          "addressRegion": "Haryana",
+          "postalCode": "122022",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9716162649",
+          "contactType": "customer service",
+          "email": "info@marselevator.in"
+        },
+        "sameAs": [
+          "https://www.instagram.com/marselevator/"
+        ],
+        "serviceArea": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Elevator Solutions",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Commercial Elevator",
+                "description": "Safe and efficient elevator solutions for commercial buildings"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Passenger Lifts",
+                "description": "Comfortable passenger lifts for residential and commercial use"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Dumbwaiter Elevator",
+                "description": "Compact lifts for transporting small goods in hotels and homes"
+              }
+            }
+          ]
+        }
+      }
+      </script>
 </body>
 </html> 

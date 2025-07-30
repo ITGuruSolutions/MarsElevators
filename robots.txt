@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+
+Sitemap: https://marselevators.in/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /config/
+Disallow: /database/
+
+# Allow all other content
+Allow: /assets/
+Allow: /Style/
+Allow: /Script/ 
